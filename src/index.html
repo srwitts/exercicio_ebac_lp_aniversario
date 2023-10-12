@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.scss">
+</head>
+<body>
+    <div class="backg">
+        <header class="hero">
+            <div class="container">
+                <p id="hero-text" class="hero__text">
+                    Compareça ao meu aniversário! <br>
+                    Será em: <span id="contador"></span>
+                </p>
+                <div class="infos-bar">
+                    <ul class="infos-bar__infos">
+                        <li class="infos-bar__infos__item">
+                            <b>Local</b>
+                            Jd. Professor Francisco Morato - Francisco Morato - São Paulo
+                        </li>
+                        <li class="infos-bar__infos__item">
+                            <b>Quando</b>
+                            20/10/2023 às 20hrs
+                        </li>
+                    </ul>
+                    <a href="#" onclick="openGoogleMaps()" class="button button--primary">
+                        Mapa
+                    </a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <section class="event event--playground">
+        <h2 class="event__titles">Atrações</h2>
+        <div class="container container-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Playground</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repellendus hic distinctio unde id sed accusamus, quod molestiae quasi fugit, sit quos inventore blanditiis, iure in sunt. Harum, et! Similique!
+                </p>
+            </div>
+            <img class="event__image" src="./images/playground.jpg" alt="Playground">
+        </div>
+    </section>
+    <section class="event event--palhaco event--image-left">
+        <div class="container container-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Palhaço para animar a festa</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repellendus hic distinctio unde id sed accusamus, quod molestiae quasi fugit, sit quos inventore blanditiis, iure in sunt. Harum, et! Similique!
+                </p>
+            </div>
+            <img class="event__image" src="./images/palhaco.jpg" alt="Palhaço">
+        </div>
+    </section>
+    <section class="event event--karaoke">
+        <div class="container container-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Karaokê</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repellendus hic distinctio unde id sed accusamus, quod molestiae quasi fugit, sit quos inventore blanditiis, iure in sunt. Harum, et! Similique!
+                </p>
+            </div>
+            <img class="event__image" src="./images/karaoke.jpg" alt="Karaokê">
+        </div>
+    </section>
+    <section class="event event--piscina event--image-left">
+        <div class="container container-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Piscina</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repellendus hic distinctio unde id sed accusamus, quod molestiae quasi fugit, sit quos inventore blanditiis, iure in sunt. Harum, et! Similique!
+                </p>
+            </div>
+            <img class="event__image" src="./images/piscina.jpg" alt="Playground">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

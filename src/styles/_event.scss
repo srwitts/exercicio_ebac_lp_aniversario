@@ -1,0 +1,79 @@
+@use 'variables';
+
+.event {
+    padding: 80px 0;
+
+    &--playground {
+        background-image: linear-gradient(variables.$blue1, variables.$blue2);
+    }
+
+    &--palhaco {
+        background-image: linear-gradient(variables.$blue2, variables.$blue3);
+    }
+
+    &--karaoke {
+        background-image: linear-gradient(variables.$blue3, variables.$blue4);
+    }
+
+    &--piscina {
+        background-image: linear-gradient(variables.$blue4, variables.$blue3);
+    }
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .container {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__image {
+        max-width: 360px;
+        border-radius: 20px;
+    }
+
+    &__details {
+        &__title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            line-height: 22px;
+        }
+    }
+
+    &__titles {
+        text-align: center;
+        padding-bottom: 64px;
+        font-size: 32px;
+    }
+
+    @media (max-width: 640px) {
+        &__titles {
+            font-size: 24px;
+        }
+
+        .container {
+            display: block;
+        }
+
+        &__image {
+            width: 100%;
+        }
+
+        &__details {
+            margin-right: 0;
+            margin-bottom: 16px;
+
+            &__title {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
